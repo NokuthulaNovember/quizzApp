@@ -8,11 +8,11 @@
 
 <ion-content class="t1">
 
-  <h2>iQuiz</h2>
+  <h2 class="n">iQuiz</h2>
 
   <h2><img src="./assets/imgs/q2.png" width="300"height="200"></h2>
 
-  <label for ="quizzOption"> pick a category:</label>
+  <label class="t" for ="quizzOption"> pick a category:</label>
 
   <select [(ngModel)]="selectedQuiz">
     <option *ngFor="let b of quizzOption, let i=index">{{quizzOption[i]}}</option>
@@ -20,21 +20,21 @@
   </select>
   <div *ngIf="selectedQuiz=='sports'">
   <ion-list radio-group [(ngModel)]="checkSports1">
-      <ion-label>which football team bought Christiano?</ion-label>
+      <ion-label class="p">1. which football team bought Christiano?</ion-label>
     <ion-item class="t2" no-lines no-padding>
         <ion-label>JUVENTUS</ion-label>
         <ion-radio value="juveteam" checked></ion-radio>
       </ion-item>
 
       <ion-item class="t2" no-lines no-padding>
-          <ion-label>BARCELONA</ion-label>
+          <ion-label class="p">BARCELONA</ion-label>
           <ion-radio value="BARteam" checked></ion-radio>
         </ion-item>
 
 </ion-list>
 
 <ion-list radio-group [(ngModel)]="checkSports2">
-    <ion-label>who has the most goals in footbal history?</ion-label>
+    <ion-label class="p">2. who has the most goals in footbal history?</ion-label>
   <ion-item class="t2" no-lines no-padding >
       <ion-label>PELE</ion-label>
       <ion-radio value="peleteam" checked></ion-radio>
@@ -50,7 +50,7 @@
 
 
 <ion-list radio-group [(ngModel)]="checkSports3">
-    <ion-label>Who is the coach of Real Madrid?</ion-label>
+    <ion-label class="p">3. Who is the coach of Real Madrid?</ion-label>
   <ion-item class="t2" no-lines no-padding>
       <ion-label>JULEN</ion-label>
       <ion-radio value="julenteam" checked></ion-radio>
@@ -66,7 +66,7 @@
 
 
 <ion-list radio-group [(ngModel)]="checkSports4">
-    <ion-label>Which team does Thuso Phala play for?</ion-label>
+    <ion-label class="p">4. Which team does Thuso Phala play for?</ion-label>
   <ion-item class="t2" no-lines no-padding>
       <ion-label>CHIEFS</ion-label>
       <ion-radio value="chiefsteam" checked></ion-radio>
@@ -82,7 +82,7 @@
 </ion-list>
 
 <ion-list radio-group [(ngModel)]="checkSports5">
-    <ion-label>Who did suarez bite in 2014 world cup?</ion-label>
+    <ion-label class="p">5. Who did suarez bite in 2014 world cup?</ion-label>
   <ion-item class="t2" no-lines no-padding>
       <ion-label>JOSE</ion-label>
       <ion-radio value="joseteam" checked></ion-radio>
@@ -105,7 +105,7 @@
 
 <div *ngIf="selectedQuiz=='movies'">
     <ion-list radio-group [(ngModel)]="checkmovies1">
-        <ion-label>1. who stars in kill Bill?</ion-label>
+        <ion-label class="p">1. who stars in kill Bill?</ion-label>
       <ion-item class="t2" no-lines no-padding>
           <ion-label>UMA</ion-label>
           <ion-radio value="ums" checked></ion-radio>
@@ -118,7 +118,7 @@
   </ion-list>
   
   <ion-list radio-group [(ngModel)]="checkmovies2">
-      <ion-label>2.Which rapper stars in Italian Job?</ion-label>
+      <ion-label class="p">2.Which rapper stars in Italian Job?</ion-label>
     <ion-item class="t2" no-lines no-padding>
         <ion-label>MOSDEF</ion-label>
         <ion-radio value="mos" checked></ion-radio>
@@ -135,7 +135,7 @@
   
   
   <ion-list radio-group [(ngModel)]="checkmovies3">
-      <ion-label>3.Who survives in Set it off?</ion-label>
+      <ion-label class="p">3.Who survives in Set it off?</ion-label>
     <ion-item class="t2" no-lines no-padding>
         <ion-label>CLEO</ion-label>
         <ion-radio value="cle" checked></ion-radio>
@@ -151,7 +151,7 @@
   
   
   <ion-list radio-group [(ngModel)]="checkmovies4">
-      <ion-label>4. which comedian stars in Secret life of pets?</ion-label>
+      <ion-label class="p">4. which comedian stars in Secret life of pets?</ion-label>
     <ion-item class="t2" no-lines no-padding>
         <ion-label>KHART</ion-label>
         <ion-radio value="hart" checked></ion-radio>
@@ -166,7 +166,7 @@
   </ion-list>
   
   <ion-list radio-group [(ngModel)]="checkmovies5">
-      <ion-label>5. Which actor of fast and furious died ?</ion-label>
+      <ion-label class="p">5. Which actor of fast and furious died ?</ion-label>
     <ion-item class="t2" no-lines no-padding>
         <ion-label>VIN</ion-label>
         <ion-radio value="vind" checked></ion-radio>
@@ -189,7 +189,7 @@
   </div>
   <div *ngIf="selectedQuiz=='politics'">
       <ion-list radio-group [(ngModel)]="checkpolitics1">
-          <ion-label>1. Who is Duduzane's father?</ion-label>
+          <ion-label class="p">1. Who is Duduzane's father?</ion-label>
         <ion-item class="t2" no-lines no-padding> 
             <ion-label>ZUMA</ion-label>
             <ion-radio value="zu" checked></ion-radio>
@@ -202,7 +202,7 @@
     </ion-list>
     
     <ion-list radio-group [(ngModel)]="checkpolitics2">
-        <ion-label>2. Who is the president of Zimbabwe?</ion-label>
+        <ion-label class="p">2. Who is the president of Zimbabwe?</ion-label>
       <ion-item class="t2" no-lines no-padding >
           <ion-label>MUGABE</ion-label>
           <ion-radio value="mug" checked></ion-radio>
@@ -219,7 +219,7 @@
     
     
     <ion-list radio-group [(ngModel)]="checkpolitics3">
-        <ion-label>3.Who was the president of South Africa before Mandela?</ion-label>
+        <ion-label class="p">3.Who was the president of South Africa before Mandela?</ion-label>
       <ion-item class="t2" no-lines no-padding >
      
           <ion-label>BOTHA</ion-label>
@@ -236,7 +236,7 @@
     
     
     <ion-list radio-group [(ngModel)]="checkpolitics4">
-        <ion-label>4. which former president of SA is uneducated?</ion-label>
+        <ion-label class="p">4. which former president of SA is uneducated?</ion-label>
       <ion-item class="t2" no-lines no-padding >
           <ion-label>JZUMA</ion-label>
           <ion-radio value="jz" checked></ion-radio>
@@ -251,7 +251,7 @@
     </ion-list>
     
     <ion-list radio-group [(ngModel)]="checkpolitics5">
-        <ion-label>5.who is the most educated president in the whole world?</ion-label>
+        <ion-label class="p">5.who is the most educated president in the whole world?</ion-label>
       <ion-item class="t2" no-lines no-padding >
           <ion-label>RMUGABE</ion-label>
           <ion-radio value="rmu" checked></ion-radio>
